@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>大维的博客  | HTML入门笔记1</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.56.3" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+
+    <meta property="og:title" content="HTML入门笔记1" />
+<meta property="og:description" content=" HTML的历史  HTML是1990年由英国的李爵士发明的   HTML的起手式  在vscode里HTML的起手式应该写为!,再按一下Tab就写出来了   常用的表示章节的标签  表示文章/书的层级 标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div
+  全局属性  所有标签都有的属性 class 给你的标签分一个类 contenteditable 是任何一个元素可以被编辑 hidden 隐身属性 id 与class类似，号称自己有唯一的属性，但html并不能保证其唯一性 style 给一个指定风格 tabindex 用来控制Tab的顺序 title 用来显示完整的内容   常用的内容标签  ol&#43;li 有序列表 ul&#43;li 无序列表 dl&#43;dt&#43;dd 描述列表 pre 显示多个空格，回车，Tab等，一般与code配合写代码用 code 写代码用，常与code配合使用 hr 水平分割线 br 中断，打断（常用在换行） a 超链接 em 强调语气 strong 强调内容 quote 引用（行内引用，内连引用） blockquote 块级引用  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/html%E5%85%A8%E8%A7%A3/" />
+<meta property="article:published_time" content="2019-08-14T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-08-14T00:00:00+00:00" />
+<meta itemprop="name" content="HTML入门笔记1">
+<meta itemprop="description" content=" HTML的历史  HTML是1990年由英国的李爵士发明的   HTML的起手式  在vscode里HTML的起手式应该写为!,再按一下Tab就写出来了   常用的表示章节的标签  表示文章/书的层级 标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div
+  全局属性  所有标签都有的属性 class 给你的标签分一个类 contenteditable 是任何一个元素可以被编辑 hidden 隐身属性 id 与class类似，号称自己有唯一的属性，但html并不能保证其唯一性 style 给一个指定风格 tabindex 用来控制Tab的顺序 title 用来显示完整的内容   常用的内容标签  ol&#43;li 有序列表 ul&#43;li 无序列表 dl&#43;dt&#43;dd 描述列表 pre 显示多个空格，回车，Tab等，一般与code配合写代码用 code 写代码用，常与code配合使用 hr 水平分割线 br 中断，打断（常用在换行） a 超链接 em 强调语气 strong 强调内容 quote 引用（行内引用，内连引用） blockquote 块级引用  ">
+
+
+<meta itemprop="datePublished" content="2019-08-14T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-14T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="65">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="HTML入门笔记1"/>
+<meta name="twitter:description" content=" HTML的历史  HTML是1990年由英国的李爵士发明的   HTML的起手式  在vscode里HTML的起手式应该写为!,再按一下Tab就写出来了   常用的表示章节的标签  表示文章/书的层级 标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div
+  全局属性  所有标签都有的属性 class 给你的标签分一个类 contenteditable 是任何一个元素可以被编辑 hidden 隐身属性 id 与class类似，号称自己有唯一的属性，但html并不能保证其唯一性 style 给一个指定风格 tabindex 用来控制Tab的顺序 title 用来显示完整的内容   常用的内容标签  ol&#43;li 有序列表 ul&#43;li 无序列表 dl&#43;dt&#43;dd 描述列表 pre 显示多个空格，回车，Tab等，一般与code配合写代码用 code 写代码用，常与code配合使用 hr 水平分割线 br 中断，打断（常用在换行） a 超链接 em 强调语气 strong 强调内容 quote 引用（行内引用，内连引用） blockquote 块级引用  "/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://example.org/" class="f3 fw2 hover-white no-underline white-90 dib">
+      大维的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">HTML入门笔记1</h1>
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-08-14T00:00:00Z">August 14, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h2 id="html的历史">HTML的历史</h2>
+
+<ul>
+<li>HTML是1990年由英国的李爵士发明的
+<br /></li>
+</ul>
+
+<h2 id="html的起手式">HTML的起手式</h2>
+
+<ul>
+<li>在vscode里HTML的起手式应该写为<code>!</code>,再按一下Tab就写出来了
+<br /></li>
+</ul>
+
+<h2 id="常用的表示章节的标签">常用的表示章节的标签</h2>
+
+<ul>
+<li>表示文章/书的层级</li>
+<li>标题          <code>h1~h6</code></li>
+<li>章节          <code>section</code></li>
+<li>文章          <code>article</code></li>
+<li>段落          <code>p</code></li>
+<li>头部          <code>header</code></li>
+<li>脚部          <code>footer</code></li>
+<li>主要内容       <code>main</code></li>
+<li>旁支内容       <code>aside</code></li>
+<li>划分          <code>div</code><br />
+<br /></li>
+</ul>
+
+<h2 id="全局属性">全局属性</h2>
+
+<ul>
+<li>所有标签都有的属性</li>
+<li><code>class</code>             给你的标签分一个类</li>
+<li><code>contenteditable</code>    是任何一个元素可以被编辑</li>
+<li><code>hidden</code>             隐身属性</li>
+<li><code>id</code>                 与class类似，号称自己有唯一的属性，但html并不能保证其唯一性</li>
+<li><code>style</code>              给一个指定风格</li>
+<li><code>tabindex</code>           用来控制Tab的顺序</li>
+<li><code>title</code>              用来显示完整的内容
+<br /></li>
+</ul>
+
+<h2 id="常用的内容标签">常用的内容标签</h2>
+
+<ul>
+<li><code>ol+li</code>              有序列表</li>
+<li><code>ul+li</code>              无序列表</li>
+<li><code>dl+dt+dd</code>           描述列表</li>
+<li><code>pre</code>                显示多个空格，回车，Tab等，一般与<code>code</code>配合写代码用</li>
+<li><code>code</code>               写代码用，常与<code>code</code>配合使用</li>
+<li><code>hr</code>                 水平分割线</li>
+<li><code>br</code>                 中断，打断（常用在换行）</li>
+<li><code>a</code>                  超链接</li>
+<li><code>em</code>                 强调语气</li>
+<li><code>strong</code>             强调内容</li>
+<li><code>quote</code>              引用（行内引用，内连引用）</li>
+<li><code>blockquote</code>         块级引用</li>
+</ul>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy; 2019 大维的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>

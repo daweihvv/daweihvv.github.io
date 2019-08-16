@@ -6,30 +6,28 @@
     <description>Recent content in Posts on 大维的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 13 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>win的软件安装与系统使用</title>
-      <link>http://example.org/posts/win%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</link>
-      <pubDate>Tue, 13 Aug 2019 00:00:00 +0000</pubDate>
+      <title>HTML入门笔记1</title>
+      <link>http://example.org/posts/html%E5%85%A8%E8%A7%A3/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/win%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</guid>
-      <description> win常用的快捷键  win+方向键 移动窗口 Alt+Tab 切换窗口 win+Tab 切换桌面 win+Ctrl 快速切换桌面  Ctrl组合键  Ctrl+Z 撤销 Ctrl+y 取消撤销  chrome高级用户配置  在检查里面按ESC可以新建控制台 sources面板可以保存代码片段 Network可以模拟慢网速/断网 presewe log勾选后不会随着刷新清空之前的log Disable cache清空缓存  chrome快捷键  鼠标中键单击 打开或者关闭网页 Ctrl+T 新建标签 Ctrl+Shift+T 撤销关闭 Ctrl+W 关闭当前标签 Ctrl+R/F5 刷新当前页面 Ctrl+L 输入网址 Ctrl+Shift+Delete 删除历史游览数据  chrome打印配置  边距-无 勾选背景图形 取消勾选页眉页脚 导出为PDF  </description>
+      <guid>http://example.org/posts/html%E5%85%A8%E8%A7%A3/</guid>
+      <description> HTML的历史  HTML是1990年由英国的李爵士发明的   HTML的起手式  在vscode里HTML的起手式应该写为!,再按一下Tab就写出来了   常用的表示章节的标签  表示文章/书的层级 标题 h1~h6 章节 section 文章 article 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div
+  全局属性  所有标签都有的属性 class 给你的标签分一个类 contenteditable 是任何一个元素可以被编辑 hidden 隐身属性 id 与class类似，号称自己有唯一的属性，但html并不能保证其唯一性 style 给一个指定风格 tabindex 用来控制Tab的顺序 title 用来显示完整的内容   常用的内容标签  ol+li 有序列表 ul+li 无序列表 dl+dt+dd 描述列表 pre 显示多个空格，回车，Tab等，一般与code配合写代码用 code 写代码用，常与code配合使用 hr 水平分割线 br 中断，打断（常用在换行） a 超链接 em 强调语气 strong 强调内容 quote 引用（行内引用，内连引用） blockquote 块级引用  </description>
     </item>
     
     <item>
-      <title>很高兴又见面了</title>
-      <link>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Mon, 12 Aug 2019 19:23:28 +0800</pubDate>
+      <title>win的软件使用与系统快捷键</title>
+      <link>http://example.org/posts/win%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 14 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <description> 自我介绍 你好我叫大维，今年23岁，我爱我的我女朋友。
-hugo server -D
-我的女朋友很好的原因  长得好看 心地善良 勤劳贤惠  我的爱好  摄影 汽车 科技   学过的编程语言有 Html Css javascript。我写一段给你瞧瞧吧
-function f(){ console.log(&#39;hello world&#39;) } f()  </description>
+      <guid>http://example.org/posts/win%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/</guid>
+      <description> win常用的快捷键  win+方向键 移动窗口 Alt+Tab 切换窗口 win+Tab 切换桌面 win+Ctrl 快速切换桌面  Ctrl组合键  Ctrl+Z 撤销 Ctrl+y 取消撤销  chrome高级用户配置  在检查里面按ESC可以新建控制台 sources面板可以保存代码片段 Network可以模拟慢网速/断网 presewe log勾选后不会随着刷新清空之前的log Disable cache清空缓存  chrome快捷键  鼠标中键单击 打开或者关闭网页 Ctrl+T 新建标签 Ctrl+Shift+T 撤销关闭 Ctrl+W 关闭当前标签 Ctrl+R/F5 刷新当前页面 Ctrl+L 输入网址 Ctrl+Shift+Delete 删除历史游览数据  chrome打印配置  边距-无 勾选背景图形 取消勾选页眉页脚 导出为PDF  </description>
     </item>
     
     <item>
