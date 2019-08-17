@@ -6,10 +6,21 @@
     <description>Recent content on 大维的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 14 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何用hugo搭建个人博客</title>
+      <link>http://example.org/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E5%AE%A2/</guid>
+      <description>安装 hugo.exe（基于 windows）  首先在这个 hugo releases 页面下载适合自己系统版本的 hugo [https://github.com/gohugoio/hugo/releases] 解压后将文件路径提取，添加到 path 里面 重启终端，运行 hugo version查看版本  配置 hugo  进入 hugo 官网 [https://gohugo.io] 点击 quick start 快速开始 从 set 2 开始抄代码知道 set 7   set 2
+hugo new site quickstart  set3 (带#的不用抄)
+cd quickstart # Download the theme git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Note for non-git users: # - If you do not have git installed, you can download the archive of the latest # version of this theme from: # https://github.</description>
+    </item>
     
     <item>
       <title>HTML入门笔记1</title>
