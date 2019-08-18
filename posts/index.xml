@@ -53,6 +53,15 @@ cd quickstart # Download the theme git init git submodule add https://github.com
     
     <item>
       <title>开博大吉</title>
+      <link>http://example.org/posts/shiyan/</link>
+      <pubDate>Mon, 12 Aug 2019 18:23:28 +0800</pubDate>
+      
+      <guid>http://example.org/posts/shiyan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开博大吉</title>
       <link>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Mon, 12 Aug 2019 18:23:28 +0800</pubDate>
       
