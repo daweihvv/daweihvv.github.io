@@ -57,7 +57,7 @@ cd quickstart # Download the theme git init git submodule add https://github.com
       <pubDate>Mon, 12 Aug 2019 18:23:28 +0800</pubDate>
       
       <guid>http://example.org/posts/shiyan/</guid>
-      <description></description>
+      <description>) )</description>
     </item>
     
     <item>
