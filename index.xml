@@ -6,10 +6,19 @@
     <description>Recent content on 大维的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 17 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>md格式的博客插图上传到hugo注意事项</title>
+      <link>http://example.org/posts/md%E6%8F%92%E5%9B%BE-hugo/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/md%E6%8F%92%E5%9B%BE-hugo/</guid>
+      <description> 在 static 目录创建 images 文件夹  将图片托入到 images 里面  写入 md 语言 ![your-images](/images/xxx.png)  </description>
+    </item>
     
     <item>
       <title>如何用hugo搭建个人博客</title>
