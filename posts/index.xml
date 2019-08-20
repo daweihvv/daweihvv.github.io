@@ -12,6 +12,19 @@
     
     
     <item>
+      <title>HTML的常用标签</title>
+      <link>http://example.org/posts/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/posts/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>a 标签的用法  属性   href target download rel=noopener  a 的 href 取值  跳转到外部页面
+&amp;lt;a href=&amp;quot;//baidu.com&amp;quot;&amp;gt;百度&amp;lt;/a&amp;gt;    跳转到内部锚点
+&amp;lt;p id=&amp;quot;xxx&amp;quot;&amp;gt;10&amp;lt;/p&amp;gt; &amp;lt;a href=&amp;quot;#xxx&amp;quot;&amp;gt;链接到xxx&amp;lt;/a&amp;gt;   点击 链接到 xxx 就到了 10 号  跳转到电话或者邮件
+&amp;lt;a href=&amp;quot;mailto:1054804846@qq.com&amp;quot;&amp;gt;发邮件给黄维&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;tel:13700951618&amp;quot;&amp;gt;打电话给维维&amp;lt;/a&amp;gt;   在手机上打开该网页点击就可以直接呼出邮件 app 或者呼出拨号键了（并且电话号码会自动输入进去）
+a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页面打开 _parent 在上一级页面打开 _self 默认值，在自己页面打开   程序员命名   window 的 name 做一个页面导航</description>
+    </item>
+    
+    <item>
       <title>md格式的博客插图上传到hugo注意事项</title>
       <link>http://example.org/posts/md%E6%8F%92%E5%9B%BE-hugo/</link>
       <pubDate>Sun, 18 Aug 2019 00:00:00 +0000</pubDate>
