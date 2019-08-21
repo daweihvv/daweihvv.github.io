@@ -45,7 +45,7 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 
 <meta itemprop="datePublished" content="2019-08-18T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-08-18T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="190">
+<meta itemprop="wordCount" content="334">
 
 
 
@@ -117,7 +117,7 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
 
-<h2 id="a-标签的用法">a 标签的用法</h2>
+<h1 id="a-标签的用法">a 标签的用法</h1>
 
 <ol>
 <li>属性</li>
@@ -130,12 +130,12 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 <li>rel=noopener</li>
 </ul>
 
-<h3 id="a-的-href-取值">a 的 href 取值</h3>
+<h2 id="a-的-href-取值">a 的 href 取值</h2>
 
 <ol>
 <li><p>跳转到外部页面</p>
 
-<pre><code>&lt;a href=&quot;//baidu.com&quot;&gt;百度&lt;/a&gt;
+<pre><code class="language-html">&lt;a href=&quot;//baidu.com&quot;&gt;百度&lt;/a&gt;
 </code></pre></li>
 </ol>
 
@@ -144,7 +144,7 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 <ol>
 <li><p>跳转到内部锚点</p>
 
-<pre><code>&lt;p id=&quot;xxx&quot;&gt;10&lt;/p&gt;
+<pre><code class="language-html">&lt;p id=&quot;xxx&quot;&gt;10&lt;/p&gt;
 &lt;a href=&quot;#xxx&quot;&gt;链接到xxx&lt;/a&gt;
 </code></pre></li>
 </ol>
@@ -156,14 +156,14 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 <ol>
 <li><p>跳转到电话或者邮件</p>
 
-<pre><code>&lt;a href=&quot;mailto:1054804846@qq.com&quot;&gt;发邮件给黄维&lt;/a&gt;
+<pre><code class="language-html">&lt;a href=&quot;mailto:1054804846@qq.com&quot;&gt;发邮件给黄维&lt;/a&gt;
 &lt;a href=&quot;tel:13700951618&quot;&gt;打电话给维维&lt;/a&gt;
 </code></pre></li>
 </ol>
 
 <p>在手机上打开该网页点击就可以直接呼出邮件 app 或者呼出拨号键了（并且电话号码会自动输入进去）</p>
 
-<h3 id="a-的-target-取值">a 的 target 取值</h3>
+<h2 id="a-的-target-取值">a 的 target 取值</h2>
 
 <ol>
 <li>内置名字</li>
@@ -183,7 +183,7 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 <ul>
 <li><p>window 的 name 做一个页面导航</p>
 
-<pre><code>&lt;a href=&quot;//google.com&quot; target=&quot;xxx&quot;&gt;google&lt;/a&gt;
+<pre><code class="language-html">&lt;a href=&quot;//google.com&quot; target=&quot;xxx&quot;&gt;google&lt;/a&gt;
 &lt;a href=&quot;//baidu.com&quot; target=&quot;xxx&quot;&gt;baidu&lt;/a&gt;
 </code></pre></li>
 </ul>
@@ -201,42 +201,40 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 
 <p>这样可以实现在同一个页面同时用百度和谷歌查资料（不过谷歌已经把 iframe 这个功能在 google 网站上禁用了）</p>
 
-<h2 id="image-标签的用法">image 标签的用法</h2>
+<h1 id="image-标签的用法">image 标签的用法</h1>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;zh-CN&quot;&gt;
-
-&lt;head&gt;
+  &lt;head&gt;
     &lt;meta charset=&quot;UTF-8&quot; /&gt;
     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
     &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
     &lt;title&gt;Document&lt;/title&gt;
     &lt;style&gt;
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-        img {
-            max-width: 100%;
-        }
+      img {
+        max-width: 100%;
+      }
     &lt;/style&gt;
-&lt;/head&gt;
+  &lt;/head&gt;
 
-&lt;body&gt;
+  &lt;body&gt;
     &lt;img id=&quot;xxx&quot; src=&quot;812superfast.png&quot; alt=&quot;一台法拉利&quot; /&gt;
     &lt;script&gt;
-        xxx.onload = function () {
-            console.log(&quot;图片加载成功&quot;);
-        };
-        xxx.onerror = function () {
-            console.log(&quot;图片加载失败&quot;);
-            xxx.src = &quot;/404.png&quot;;
-        };
+      xxx.onload = function() {
+        console.log(&quot;图片加载成功&quot;);
+      };
+      xxx.onerror = function() {
+        console.log(&quot;图片加载失败&quot;);
+        xxx.src = &quot;/404.png&quot;;
+      };
     &lt;/script&gt;
-&lt;/body&gt;
-
+  &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 
@@ -244,7 +242,7 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 <li><p>作用
 发出 get 请求，展示一张图片</p>
 
-<pre><code>&lt;img id=&quot;xxx&quot; src=&quot;812superfast.png&quot; alt=&quot;一台法拉利&quot; /&gt;
+<pre><code class="language-html">&lt;img id=&quot;xxx&quot; src=&quot;812superfast.png&quot; alt=&quot;一台法拉利&quot; /&gt;
 </code></pre></li>
 </ol>
 
@@ -257,29 +255,167 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 <ul>
 <li><p>alt</p>
 
-<pre><code>alt=&quot;一台法拉利&quot;
+<pre><code class="language-html">alt=&quot;一台法拉利&quot;
 </code></pre></li>
 </ul>
 
-<p>当图片加载出现错误时，出现一个图片的名称，至少可以减少用户打电话让经理开出我的冲动
-<img src="/images/img2" alt="falali" />
-或者还有个更好的选择，当法拉利出不来的时候，那就出来一个奥拓代表加载失败了吧，至少奥拓也是车啊,看了有木有舒服点</p>
+<p>当图片加载出现错误时，出现一个图片的名称，至少可以减少用户想弄死我的冲动
+<img src="/images/img2" alt="falali" /></p>
 
-<pre><code>&lt;img id=&quot;xxx&quot; src=&quot;812superfastx.png&quot; alt=&quot;一台法拉利&quot; /&gt;
+<ul>
+<li><p>scr 以及事件 onload/onerror
+或者还有个更好的选择，当法拉利出不来的时候，也就是事件 onerror 发生时，那就出来一个奥拓代表加载失败了吧，至少奥拓也是车啊,看了有木有舒服点</p>
+
+<pre><code class="language-html">&lt;img id=&quot;xxx&quot; src=&quot;812superfastx.png&quot; alt=&quot;一台法拉利&quot; /&gt;
 &lt;script&gt;
-    xxx.onload = function () {
-        console.log(&quot;图片加载成功&quot;);
-    };
-    xxx.onerror = function () {
-        console.log(&quot;图片加载失败&quot;);
-        xxx.src = &quot;/404.png&quot;;
-    };
+xxx.onload = function() {
+console.log(&quot;图片加载成功&quot;);
+};
+xxx.onerror = function() {
+console.log(&quot;图片加载失败&quot;);
+xxx.src = &quot;/404.png&quot;;
+};
+&lt;/script&gt;
+</code></pre></li>
+</ul>
 
-```
-![falali](/images/img3)
+<p><img src="/images/img3" alt="falali" /></p>
 
-- href
+<ul>
+<li><p>响应式 max-height/max-width 图片宽度以及高度</p>
+
+<pre><code class="language-html">&lt;style&gt;
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+img {
+max-width: 100%;
+}
+&lt;/style&gt;
+</code></pre></li>
+</ul>
+
+<p>在 rest 一些参数后，在给一个<br></p>
+
+<pre><code class="language-html">max-width: 100%;
 </code></pre>
+
+<p>或者<br></p>
+
+<pre><code class="language-html">max-height: 100%
+</code></pre>
+
+<p>这样就可以做到例如图片宽度或者高度会自适应当前窗口大小，与之相对的另外一个宽高参数会随着比例自动改变
+<img src="/images/img4" alt="img4" />
+<img src="/images/img5" alt="img4" /></p>
+
+<h1 id="table-标签的用法">table 标签的用法</h1>
+
+<ol>
+<li>相关的标签</li>
+</ol>
+
+<ul>
+<li>table</li>
+<li>thead 头</li>
+<li>tbody 身体</li>
+<li>tfoot 脚部</li>
+<li>tr table row 一行</li>
+<li>td table date 数据</li>
+
+<li><p>th 表头</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;style&gt;
+  table {
+    width: 300px;
+    table-layout: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  td,
+  th {
+    border: 1px solid blue;
+  }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;/th&gt;
+      &lt;th&gt;小红&lt;/th&gt;
+      &lt;th&gt;小明&lt;/th&gt;
+      &lt;th&gt;小颖&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th&gt;数学&lt;/th&gt;
+      &lt;td&gt;61&lt;/td&gt;
+      &lt;td&gt;91&lt;/td&gt;
+      &lt;td&gt;85&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;语文&lt;/th&gt;
+      &lt;td&gt;79&lt;/td&gt;
+      &lt;td&gt;82&lt;/td&gt;
+      &lt;td&gt;92&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th&gt;英语&lt;/th&gt;
+      &lt;td&gt;100&lt;/td&gt;
+      &lt;td&gt;97&lt;/td&gt;
+      &lt;td&gt;87&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;th&gt;总分&lt;/th&gt;
+      &lt;td&gt;200&lt;/td&gt;
+      &lt;td&gt;200&lt;/td&gt;
+      &lt;td&gt;200&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></li>
+</ul>
+
+<p><img src="/images/table1.png" alt="table1" /></p>
+
+<ol>
+<li>相关的样式</li>
+</ol>
+
+<ul>
+<li><p>table-layout 属性定义了用于布局表格单元格，行和列的算法。<br>
+auto<br>
+意思就是每一列和行的宽度是自动的
+（大多数浏览器采用自动表格布局算法对表格布局，表格及单元格的宽度取决于其包含的内容）<br>
+fixed<br>
+意思就是等宽（表格和列的宽度通过表格的宽度来设置，某一列的宽度仅由该列首行的单元格决定。在当前列中，该单元格所在行之后的行并不会影响整个列宽。）</p></li>
+
+<li><p>border-collapse<br>
+border-collapse CSS 属性是用来决定表格的边框是分开的还是合并的。在分隔模式下，相邻的单元格都拥有独立的边框。在合并模式下，相邻单元格共享边框。
+<img src="/images/table2.png" alt="table2" />
+<img src="/images/table3.png" alt="table2" /></p></li>
+</ul>
+
+<p># html 感想</p>
+
+<ol>
+<li>html 是一个非常有意思的语言，有些东西需要牢牢地记住，而记住他最好的办法就是练习，不说了，我码代码去了哈哈</li>
+</ol>
 <ul class="pa0">
   
 </ul>
