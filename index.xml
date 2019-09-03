@@ -84,10 +84,10 @@ cd quickstart # Download the theme git init git submodule add https://github.com
     
     <item>
       <title>浅析URL</title>
-      <link>http://example.org/posts/%E6%B5%85%E6%9E%90url/</link>
+      <link>http://example.org/posts/url/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/%E6%B5%85%E6%9E%90url/</guid>
+      <guid>http://example.org/posts/url/</guid>
       <description>URL的介绍 URL的英文全称是Uniform Resource Locator，可以翻译为统一资源定位符，它最初是由李爵士发明用来作为万维网的地址。
 URL的构成 协议+域名或IP+端口号+路径+查询字符串+锚点 图片来源@杭州饥人谷教育 * 协议可以理解为http or https * 域名就像xiedaimala.com，IP就像227.38.992.22 * 端口号例如: 80 * 路径: /s * 查询字符串： wd=hello&amp;amp;rsv_spt=1 * 锚点：#5
 DNS的基础 DNS的全称为Domain Name System，网域名称系统，IP和域名通过DNS联系起来
