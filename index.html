@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/" />
 
-<meta property="og:updated_time" content="2019-08-18T00:00:00+00:00" />
+<meta property="og:updated_time" content="2019-09-02T00:00:00+00:00" />
 <meta itemprop="name" content="大维的博客">
 <meta itemprop="description" content="">
 
@@ -120,6 +120,37 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/%E6%B5%85%E6%9E%90url/" class="color-inherit dim link">
+            浅析URL
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          URL的介绍 URL的英文全称是Uniform Resource Locator，可以翻译为统一资源定位符，它最初是由李爵士发明用来作为万维网的地址。
+URL的构成 协议+域名或IP+端口号+路径+查询字符串+锚点 图片来源@杭州饥人谷教育 * 协议可以理解为http or https * 域名就像xiedaimala.com，IP就像227.38.992.22 * 端口号例如: 80 * 路径: /s * 查询字符串： wd=hello&amp;rsv_spt=1 * 锚点：#5
+DNS的基础 DNS的全称为Domain Name System，网域名称系统，IP和域名通过DNS联系起来
+例如：daweihvv.com这个域名与198.35.26.96这个ip对应，那么当用户在游览器地址栏输入daweihvv.com这个域名时，DNS系统就会把这个域名转化为对应的便于机器识别的IP
+nslookup的用法 在IDE里面输入
+nslookup baidu.com  他就会返回你一个百度的ip 这里我们可以看到我得到的百度ip是223.87.179.156
+IP的作用 IP在网络世界中起着至关重要的作用，他就像我们的身份证一样，一个人有且只有唯一的一张属于自己的身份证，在网络世界中，一个网站对应着一个ip，通过这个ip，全世界的人都可以访问这个网站了。
+域名是什么 图片来源@杭州饥人谷教育
+        </div>
+          <a href="/posts/%E6%B5%85%E6%9E%90url/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="color-inherit dim link">
             HTML的常用标签
             </a>
@@ -164,38 +195,18 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E5%AE%A2/" class="color-inherit dim link">
-            如何用hugo搭建个人博客
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          安装 hugo.exe（基于 windows）  首先在这个 hugo releases 页面下载适合自己系统版本的 hugo [https://github.com/gohugoio/hugo/releases] 解压后将文件路径提取，添加到 path 里面 重启终端，运行 hugo version查看版本  配置 hugo  进入 hugo 官网 [https://gohugo.io] 点击 quick start 快速开始 从 set 2 开始抄代码知道 set 7   set 2
-hugo new site quickstart  set3 (带#的不用抄)
-cd quickstart # Download the theme git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke # Note for non-git users: # - If you do not have git installed, you can download the archive of the latest # version of this theme from: # https://github.
-        </div>
-          <a href="/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E5%AE%A2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E5%AE%A2/" class="link black dim">
+              如何用hugo搭建个人博客
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/html%E5%85%A8%E8%A7%A3/" class="link black dim">
@@ -212,12 +223,6 @@ cd quickstart # Download the theme git init git submodule add https://github.com
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" class="link black dim">
               开博大吉
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/url/" class="link black dim">
-              浅析URL
             </a>
           </h2>
         
