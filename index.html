@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/" />
 
-<meta property="og:updated_time" content="2019-09-02T00:00:00+00:00" />
+<meta property="og:updated_time" content="2019-09-07T00:00:00+00:00" />
 <meta itemprop="name" content="大维的博客">
 <meta itemprop="description" content="">
 
@@ -120,14 +120,52 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/js%E5%8E%86%E5%8F%B2/" class="color-inherit dim link">
+            HTML入门笔记1
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          ##JavaScript诞生记 1. 1994年，网景公司（Netscape）发布了Navigator浏览器0.9版。这是历史上第一个比较成熟的网络浏览器，轰动一时。但是，这个版本的浏览器只能用来浏览，不具备与访问者互动的能力。&hellip;&hellip;网景公司急需一种网页脚本语言，使得浏览器可以与网页互动。网页脚本语言到底是什么语言？网景公司当时有两个选择：一个是采用现有的语言，比如Perl、Python、Tcl、Scheme等等，允许它们直接嵌入网页；另一个是发明一种全新的语言。
+这两个选择各有利弊。第一个选择，有利于充分利用现有代码和程序员资源，推广起来比较容易；第二个选择，有利于开发出完全适用的语言，实现起来比较容易。
+到底采用哪一个选择，网景公司内部争执不下，管理层一时难以下定决心。
+ 就在这时，发生了另外一件大事：1995年Sun公司将Oak语言改名为Java，正式向市场推出。
+Sun公司大肆宣传，许诺这种语言可以&rdquo;一次编写，到处运行&rdquo;（Write Once, Run Anywhere），它看上去很可能成为未来的主宰。
+网景公司动了心，决定与Sun公司结成联盟。它不仅允许Java程序以applet（小程序）的形式，直接在浏览器中运行；甚至还考虑直接将Java作为脚本语言嵌入网页，只是因为这样会使HTML网页过于复杂，后来才不得不放弃。
+总之，当时的形势就是，网景公司的整个管理层，都是Java语言的信徒，Sun公司完全介入网页脚本语言的决策。因此，Javascript后来就是网景和Sun两家公司一起携手推向市场的，这种语言被命名为&rdquo;Java+script&rdquo;并不是偶然的。
+ 此时，34岁的系统程序员Brendan Eich登场了。1995年4月，网景公司录用了他。
+Brendan Eich的主要方向和兴趣是函数式编程，网景公司招聘他的目的，是研究将Scheme语言作为网页脚本语言的可能性。Brendan Eich本人也是这样想的，以为进入新公司后，会主要与Scheme语言打交道。
+仅仅一个月之后，1995年5月，网景公司做出决策，未来的网页脚本语言必须&rdquo;看上去与Java足够相似&rdquo;，但是比Java简单，使得非专业的网页作者也能很快上手。这个决策实际上将Perl、Python、Tcl、Scheme等非面向对象编程的语言都排除在外了。
+Brendan Eich被指定为这种&rdquo;简化版Java语言&rdquo;的设计师。
+ Javascript语言实际上是两种语言风格的混合产物&mdash;-（简化的）函数式编程+（简化的）面向对象编程。这是由Brendan Eich（函数式编程）与网景公司（面向对象编程）共同决定的。
+ 如果不是公司的决策，Brendan Eich绝不可能把Java作为Javascript设计的原型。作为设计者，他一点也不喜欢自己的这个作品：&rdquo;与其说我爱Javascript，不如说我恨它。它是C语言和Self语言一夜情的产物。十八世纪英国文学家约翰逊博士说得好：&rsquo;它的优秀之处并非原创，它的原创之处并不优秀。&rsquo;（the part that is good is not original, and the part that is original is not good.）&rdquo;
+以上摘选自“阮一峰”老师的博客
+  
+        </div>
+          <a href="/posts/js%E5%8E%86%E5%8F%B2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/%E6%B5%85%E6%9E%90url/" class="color-inherit dim link">
             浅析URL
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
           URL的介绍 URL的英文全称是Uniform Resource Locator，可以翻译为统一资源定位符，它最初是由李爵士发明用来作为万维网的地址。
-URL的构成 协议+域名或IP+端口号+路径+查询字符串+锚点 图片来源@杭州饥人谷教育 * 协议可以理解为http or https * 域名就像xiedaimala.com，IP就像227.38.992.22 * 端口号例如: 80 * 路径: /s * 查询字符串： wd=hello&amp;rsv_spt=1 * 锚点：#5
-DNS的基础 DNS的全称为Domain Name System，网域名称系统，IP和域名通过DNS联系起来
+URL的构成 协议+域名或IP+端口号+路径+查询字符串+锚点 图片来源@杭州饥人谷教育
+ 协议可以理解为http or https 域名就像xiedaimala.com，IP就像227.38.992.22 端口号例如: 80 路径: /s 查询字符串： wd=hello&amp;rsv_spt=1 锚点：#5  DNS的基础 DNS的全称为Domain Name System，网域名称系统，IP和域名通过DNS联系起来
 例如：daweihvv.com这个域名与198.35.26.96这个ip对应，那么当用户在游览器地址栏输入daweihvv.com这个域名时，DNS系统就会把这个域名转化为对应的便于机器识别的IP
 nslookup的用法 在IDE里面输入
 nslookup baidu.com  他就会返回你一个百度的ip 这里我们可以看到我得到的百度ip是223.87.179.156
@@ -171,36 +209,18 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/md%E6%8F%92%E5%9B%BE-hugo/" class="color-inherit dim link">
-            md格式的博客插图上传到hugo注意事项
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-           在 static 目录创建 images 文件夹  将图片托入到 images 里面  写入 md 语言 ![your-images](/images/xxx.png)  
-        </div>
-          <a href="/posts/md%E6%8F%92%E5%9B%BE-hugo/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/md%E6%8F%92%E5%9B%BE-hugo/" class="link black dim">
+              md格式的博客插图上传到hugo注意事项
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAhugo%E5%8D%9A%E5%AE%A2/" class="link black dim">
@@ -217,12 +237,6 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/win%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/" class="link black dim">
               win的软件使用与系统快捷键
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" class="link black dim">
-              开博大吉
             </a>
           </h2>
         
