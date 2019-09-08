@@ -13,11 +13,11 @@
     
     <item>
       <title>HTML入门笔记1</title>
-      <link>http://example.org/posts/js%E5%8E%86%E5%8F%B2/</link>
+      <link>http://example.org/posts/js%E7%9A%84%E5%8E%86%E5%8F%B2/</link>
       <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/posts/js%E5%8E%86%E5%8F%B2/</guid>
-      <description>##JavaScript诞生记 1. 1994年，网景公司（Netscape）发布了Navigator浏览器0.9版。这是历史上第一个比较成熟的网络浏览器，轰动一时。但是，这个版本的浏览器只能用来浏览，不具备与访问者互动的能力。&amp;hellip;&amp;hellip;网景公司急需一种网页脚本语言，使得浏览器可以与网页互动。网页脚本语言到底是什么语言？网景公司当时有两个选择：一个是采用现有的语言，比如Perl、Python、Tcl、Scheme等等，允许它们直接嵌入网页；另一个是发明一种全新的语言。
+      <guid>http://example.org/posts/js%E7%9A%84%E5%8E%86%E5%8F%B2/</guid>
+      <description> JavaScript诞生记  1994年，网景公司（Netscape）发布了Navigator浏览器0.9版。这是历史上第一个比较成熟的网络浏览器，轰动一时。但是，这个版本的浏览器只能用来浏览，不具备与访问者互动的能力。&amp;hellip;&amp;hellip;网景公司急需一种网页脚本语言，使得浏览器可以与网页互动。网页脚本语言到底是什么语言？网景公司当时有两个选择：一个是采用现有的语言，比如Perl、Python、Tcl、Scheme等等，允许它们直接嵌入网页；另一个是发明一种全新的语言。
 这两个选择各有利弊。第一个选择，有利于充分利用现有代码和程序员资源，推广起来比较容易；第二个选择，有利于开发出完全适用的语言，实现起来比较容易。
 到底采用哪一个选择，网景公司内部争执不下，管理层一时难以下定决心。
  就在这时，发生了另外一件大事：1995年Sun公司将Oak语言改名为Java，正式向市场推出。
