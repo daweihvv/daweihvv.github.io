@@ -33,7 +33,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://example.org/" />
 
-<meta property="og:updated_time" content="2019-09-07T00:00:00+00:00" />
+<meta property="og:updated_time" content="2019-09-10T00:00:00+00:00" />
 <meta itemprop="name" content="大维的博客">
 <meta itemprop="description" content="">
 
@@ -120,6 +120,50 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="color-inherit dim link">
+            CSS知识总结
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          ##游览器的渲染原理以及过程
+ 原理 每过一段时间（初级方法是用setlnterval做到） 将div移动一段距离 直接移动到目标地点
+ 过程
+ 根据HTML构建HTML树（Dom）
+ 根据css构建css树（cssom）
+ 将两棵树合并成一颗渲染树(render tree)
+ Layout布局(文档流、盒模型、计算大小和位置)
+ paint绘制(把边框颜色、文字颜色、阴影等画出来)
+ Compose合成(根据层叠关系展示画面)
+  游览器渲染性能优化  如何调出调试界面  进入开发者工具后按ESC，点击Rendering 勾选Paint flashing 然后在动画进行的过程中，每绿一次就渲染了一次 Css动画的做法 transition&amp;animation transition  作用 补充中间帧
+ 语法
+ transition:属性名|时长|过渡方式|延迟
+ transition:left 1s linear 3s
+ 可以用都好分隔两个不同属性
+ transition:left 1s , top 1s
+ 可以用alt代表所有属性
+ transition: all 1s1
+ 过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps
+ 注意
+ 并不是所有属性都能过渡
+ display: none=&gt;block 没法过渡
+        </div>
+          <a href="/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/js%E5%8E%86%E5%8F%B2/" class="color-inherit dim link">
             JavaScript诞生记
             </a>
@@ -181,40 +225,18 @@ IP的作用 IP在网络世界中起着至关重要的作用，他就像我们的
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="color-inherit dim link">
-            HTML的常用标签
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          a 标签的用法  属性   href target download rel=noopener  a 的 href 取值  跳转到外部页面
-&lt;a href=&quot;//baidu.com&quot;&gt;百度&lt;/a&gt;    跳转到内部锚点
-&lt;p id=&quot;xxx&quot;&gt;10&lt;/p&gt; &lt;a href=&quot;#xxx&quot;&gt;链接到xxx&lt;/a&gt;   点击 链接到 xxx 就到了 10 号  跳转到电话或者邮件
-&lt;a href=&quot;mailto:1054804846@qq.com&quot;&gt;发邮件给黄维&lt;/a&gt; &lt;a href=&quot;tel:13700951618&quot;&gt;打电话给维维&lt;/a&gt;   在手机上打开该网页点击就可以直接呼出邮件 app 或者呼出拨号键了（并且电话号码会自动输入进去）
-a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页面打开 _parent 在上一级页面打开 _self 默认值，在自己页面打开   程序员命名   window 的 name 做一个页面导航
-        </div>
-          <a href="/posts/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/html%E7%9A%84%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
+              HTML的常用标签
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/md%E6%8F%92%E5%9B%BE-hugo/" class="link black dim">
@@ -231,12 +253,6 @@ a 的 target 取值  内置名字   _blank 在空白页面打开 _top 顶级页�
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/html%E5%85%A8%E8%A7%A3/" class="link black dim">
               HTML入门笔记1
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="/posts/win%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E4%B8%8E%E7%B3%BB%E7%BB%9F%E4%BD%BF%E7%94%A8/" class="link black dim">
-              win的软件使用与系统快捷键
             </a>
           </h2>
         
