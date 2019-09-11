@@ -26,51 +26,13 @@
     
 
     <meta property="og:title" content="CSS知识总结" />
-<meta property="og:description" content="游览器的渲染原理以及过程  原理 每过一段时间（初级方法是用setlnterval做到） 将div移动一段距离 直接移动到目标地点
- 过程
- 根据HTML构建HTML树（Dom）
- 根据css构建css树（cssom）
- 将两棵树合并成一颗渲染树(render tree)
- Layout布局(文档流、盒模型、计算大小和位置)
- paint绘制(把边框颜色、文字颜色、阴影等画出来)
- Compose合成(根据层叠关系展示画面)
-  游览器渲染性能优化  如何调出调试界面  进入开发者工具后按ESC，点击Rendering 勾选Paint flashing 然后在动画进行的过程中，每绿一次就渲染了一次 Css动画的做法 transition&amp;animation transition  作用 补充中间帧
- 语法
- transition:属性名|时长|过渡方式|延迟
- transition:left 1s linear 3s
- 可以用都好分隔两个不同属性
- transition:left 1s , top 1s
- 可以用alt代表所有属性
- transition: all 1s1
- 过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps
- 注意
- 并不是所有属性都能过渡
- display: none=&gt;block 没法过渡" />
+<meta property="og:description" content="游览器的渲染原理以及过程 原理  每过一段时间（初级方法是用setlnterval做到） 将div移动一段距离 直接移动到目标地点  过程  根据HTML构建HTML树（Dom） 根据css构建css树（cssom） 将两棵树合并成一颗渲染树(render tree) Layout布局(文档流、盒模型、计算大小和位置) paint绘制(把边框颜色、文字颜色、阴影等画出来) Compose合成(根据层叠关系展示画面)  游览器渲染性能优化 如何调出调试界面 进入开发者工具后按ESC，点击Rendering 勾选Paint flashing 然后在动画进行的过程中，每绿一次就渲染了一次 Css动画的做法 transition&amp;animation transition 作用  补充中间帧  语法  transition:属性名|时长|过渡方式|延迟 transition:left 1s linear 3s 可以用都好分隔两个不同属性 transition:left 1s , top 1s 可以用alt代表所有属性 transition: all 1s1 过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps  注意  并不是所有属性都能过渡 display: none=&gt;block 没法过渡 一般改为`visibility: hidden=&gt;visble  举例-跳动的心transition  http://js.jirengu.com/vihabitaxo/2/edit?html,css,output  animation过渡 作用  声明关键帧 添加动画  语法  animation:时长|过渡方式|延迟|方向|填充模式|是否暂停|动画名 时长： 1s或200ms 过渡方式： 跟transition取值一样 次数： 3或者2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://example.org/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" />
 <meta property="article:published_time" content="2019-09-10T00:00:00+00:00" />
 <meta property="article:modified_time" content="2019-09-10T00:00:00+00:00" />
 <meta itemprop="name" content="CSS知识总结">
-<meta itemprop="description" content="游览器的渲染原理以及过程  原理 每过一段时间（初级方法是用setlnterval做到） 将div移动一段距离 直接移动到目标地点
- 过程
- 根据HTML构建HTML树（Dom）
- 根据css构建css树（cssom）
- 将两棵树合并成一颗渲染树(render tree)
- Layout布局(文档流、盒模型、计算大小和位置)
- paint绘制(把边框颜色、文字颜色、阴影等画出来)
- Compose合成(根据层叠关系展示画面)
-  游览器渲染性能优化  如何调出调试界面  进入开发者工具后按ESC，点击Rendering 勾选Paint flashing 然后在动画进行的过程中，每绿一次就渲染了一次 Css动画的做法 transition&amp;animation transition  作用 补充中间帧
- 语法
- transition:属性名|时长|过渡方式|延迟
- transition:left 1s linear 3s
- 可以用都好分隔两个不同属性
- transition:left 1s , top 1s
- 可以用alt代表所有属性
- transition: all 1s1
- 过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps
- 注意
- 并不是所有属性都能过渡
- display: none=&gt;block 没法过渡">
+<meta itemprop="description" content="游览器的渲染原理以及过程 原理  每过一段时间（初级方法是用setlnterval做到） 将div移动一段距离 直接移动到目标地点  过程  根据HTML构建HTML树（Dom） 根据css构建css树（cssom） 将两棵树合并成一颗渲染树(render tree) Layout布局(文档流、盒模型、计算大小和位置) paint绘制(把边框颜色、文字颜色、阴影等画出来) Compose合成(根据层叠关系展示画面)  游览器渲染性能优化 如何调出调试界面 进入开发者工具后按ESC，点击Rendering 勾选Paint flashing 然后在动画进行的过程中，每绿一次就渲染了一次 Css动画的做法 transition&amp;animation transition 作用  补充中间帧  语法  transition:属性名|时长|过渡方式|延迟 transition:left 1s linear 3s 可以用都好分隔两个不同属性 transition:left 1s , top 1s 可以用alt代表所有属性 transition: all 1s1 过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps  注意  并不是所有属性都能过渡 display: none=&gt;block 没法过渡 一般改为`visibility: hidden=&gt;visble  举例-跳动的心transition  http://js.jirengu.com/vihabitaxo/2/edit?html,css,output  animation过渡 作用  声明关键帧 添加动画  语法  animation:时长|过渡方式|延迟|方向|填充模式|是否暂停|动画名 时长： 1s或200ms 过渡方式： 跟transition取值一样 次数： 3或者2.">
 
 
 <meta itemprop="datePublished" content="2019-09-10T00:00:00&#43;00:00" />
@@ -82,26 +44,7 @@
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CSS知识总结"/>
-<meta name="twitter:description" content="游览器的渲染原理以及过程  原理 每过一段时间（初级方法是用setlnterval做到） 将div移动一段距离 直接移动到目标地点
- 过程
- 根据HTML构建HTML树（Dom）
- 根据css构建css树（cssom）
- 将两棵树合并成一颗渲染树(render tree)
- Layout布局(文档流、盒模型、计算大小和位置)
- paint绘制(把边框颜色、文字颜色、阴影等画出来)
- Compose合成(根据层叠关系展示画面)
-  游览器渲染性能优化  如何调出调试界面  进入开发者工具后按ESC，点击Rendering 勾选Paint flashing 然后在动画进行的过程中，每绿一次就渲染了一次 Css动画的做法 transition&amp;animation transition  作用 补充中间帧
- 语法
- transition:属性名|时长|过渡方式|延迟
- transition:left 1s linear 3s
- 可以用都好分隔两个不同属性
- transition:left 1s , top 1s
- 可以用alt代表所有属性
- transition: all 1s1
- 过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps
- 注意
- 并不是所有属性都能过渡
- display: none=&gt;block 没法过渡"/>
+<meta name="twitter:description" content="游览器的渲染原理以及过程 原理  每过一段时间（初级方法是用setlnterval做到） 将div移动一段距离 直接移动到目标地点  过程  根据HTML构建HTML树（Dom） 根据css构建css树（cssom） 将两棵树合并成一颗渲染树(render tree) Layout布局(文档流、盒模型、计算大小和位置) paint绘制(把边框颜色、文字颜色、阴影等画出来) Compose合成(根据层叠关系展示画面)  游览器渲染性能优化 如何调出调试界面 进入开发者工具后按ESC，点击Rendering 勾选Paint flashing 然后在动画进行的过程中，每绿一次就渲染了一次 Css动画的做法 transition&amp;animation transition 作用  补充中间帧  语法  transition:属性名|时长|过渡方式|延迟 transition:left 1s linear 3s 可以用都好分隔两个不同属性 transition:left 1s , top 1s 可以用alt代表所有属性 transition: all 1s1 过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps  注意  并不是所有属性都能过渡 display: none=&gt;block 没法过渡 一般改为`visibility: hidden=&gt;visble  举例-跳动的心transition  http://js.jirengu.com/vihabitaxo/2/edit?html,css,output  animation过渡 作用  声明关键帧 添加动画  语法  animation:时长|过渡方式|延迟|方向|填充模式|是否暂停|动画名 时长： 1s或200ms 过渡方式： 跟transition取值一样 次数： 3或者2."/>
 
   </head>
 
@@ -164,33 +107,28 @@
 
 <h2 id="游览器的渲染原理以及过程">游览器的渲染原理以及过程</h2>
 
-<ol>
-<li>原理</li>
+<h4 id="原理">原理</h4>
+
+<ul>
 <li>每过一段时间（初级方法是用setlnterval做到）</li>
 <li>将div移动一段距离</li>
+<li>直接移动到目标地点</li>
+</ul>
 
-<li><p>直接移动到目标地点</p></li>
+<h4 id="过程">过程</h4>
 
-<li><p>过程</p></li>
-
-<li><p>根据HTML构建HTML树（Dom）</p></li>
-
-<li><p>根据css构建css树（cssom）</p></li>
-
-<li><p>将两棵树合并成一颗渲染树(render tree)</p></li>
-
-<li><p>Layout布局(文档流、盒模型、计算大小和位置)</p></li>
-
-<li><p>paint绘制(把边框颜色、文字颜色、阴影等画出来)</p></li>
-
-<li><p>Compose合成(根据层叠关系展示画面)</p></li>
-</ol>
+<ul>
+<li>根据HTML构建HTML树（Dom）</li>
+<li>根据css构建css树（cssom）</li>
+<li>将两棵树合并成一颗渲染树(render tree)</li>
+<li>Layout布局(文档流、盒模型、计算大小和位置)</li>
+<li>paint绘制(把边框颜色、文字颜色、阴影等画出来)</li>
+<li>Compose合成(根据层叠关系展示画面)</li>
+</ul>
 
 <h2 id="游览器渲染性能优化">游览器渲染性能优化</h2>
 
-<ol>
-<li>如何调出调试界面</li>
-</ol>
+<h4 id="如何调出调试界面">如何调出调试界面</h4>
 
 <p>进入开发者工具后按ESC，点击Rendering
 <img src="/images/css/3.jpg" alt="3" />
@@ -203,81 +141,77 @@
 
 <h3 id="transition">transition</h3>
 
-<ol>
-<li>作用</li>
+<h4 id="作用">作用</h4>
 
-<li><p>补充中间帧</p></li>
+<ul>
+<li>补充中间帧</li>
+</ul>
 
-<li><p>语法</p></li>
+<h4 id="语法">语法</h4>
 
-<li><p>transition:属性名|时长|过渡方式|延迟</p></li>
+<ul>
+<li>transition:属性名|时长|过渡方式|延迟</li>
+<li>transition:<code>left 1s linear 3s</code></li>
+<li>可以用都好分隔两个不同属性</li>
+<li>transition:<code>left 1s , top 1s</code></li>
+<li>可以用alt代表所有属性</li>
+<li>transition: <code>all 1s1</code></li>
+<li>过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps</li>
+</ul>
 
-<li><p>transition:<code>left 1s linear 3s</code></p></li>
+<h4 id="注意">注意</h4>
 
-<li><p>可以用都好分隔两个不同属性</p></li>
+<ul>
+<li>并不是所有属性都能过渡</li>
+<li><code>display: none=&gt;block</code> 没法过渡</li>
+<li>一般改为`visibility: hidden=&gt;visble</li>
+</ul>
 
-<li><p>transition:<code>left 1s , top 1s</code></p></li>
+<h4 id="举例-跳动的心transition">举例-跳动的心transition</h4>
 
-<li><p>可以用alt代表所有属性</p></li>
-
-<li><p>transition: <code>all 1s1</code></p></li>
-
-<li><p>过度方式有：linear,ease(默认),ease-in,ease-out,ease-in-out,cubic-bezier,step-start,step-end,steps</p></li>
-
-<li><p>注意</p></li>
-
-<li><p>并不是所有属性都能过渡</p></li>
-
-<li><p><code>display: none=&gt;block</code> 没法过渡</p></li>
-
-<li><p>一般改为`visibility: hidden=&gt;visble</p></li>
-
-<li><p>举例-跳动的心transition</p></li>
-
-<li><p><a href="http://js.jirengu.com/vihabitaxo/2/edit?html,css,output">http://js.jirengu.com/vihabitaxo/2/edit?html,css,output</a></p></li>
-</ol>
+<ul>
+<li><a href="http://js.jirengu.com/vihabitaxo/2/edit?html,css,output">http://js.jirengu.com/vihabitaxo/2/edit?html,css,output</a></li>
+</ul>
 
 <h3 id="animation过渡">animation过渡</h3>
 
-<ol>
-<li>作用</li>
+<h4 id="作用-1">作用</h4>
+
+<ul>
 <li>声明关键帧</li>
+<li>添加动画</li>
+</ul>
 
-<li><p>添加动画</p></li>
+<h4 id="语法-1">语法</h4>
 
-<li><p>语法</p></li>
+<ul>
+<li>animation:时长|过渡方式|延迟|方向|填充模式|是否暂停|动画名</li>
+<li>时长： 1s或200ms</li>
+<li>过渡方式： 跟transition取值一样</li>
+<li>次数： 3或者2.4或者infinite(无限次)</li>
+<li>方向： reverse(反向),alternate(交替),alternate-reverse</li>
+<li>填充模式： none|forwards|backwards|both</li>
+<li>是否暂停： paused|running</li>
+</ul>
 
-<li><p>animation:时长|过渡方式|延迟|方向|填充模式|是否暂停|动画名</p></li>
+<h4 id="举例-跳动的心animation">举例&ndash;跳动的心animation</h4>
 
-<li><p>时长： 1s或200ms</p></li>
-
-<li><p>过渡方式： 跟transition取值一样</p></li>
-
-<li><p>次数： 3或者2.4或者infinite(无限次)</p></li>
-
-<li><p>方向： reverse(反向),alternate(交替),alternate-reverse</p></li>
-
-<li><p>填充模式： none|forwards|backwards|both</p></li>
-
-<li><p>是否暂停： paused|running</p></li>
-
-<li><p>举例&ndash;跳动的心animation</p></li>
-
-<li><p><a href="http://js.jirengu.com/xifofatano/1/edit?html,css,output">http://js.jirengu.com/xifofatano/1/edit?html,css,output</a></p></li>
-</ol>
+<ul>
+<li><a href="http://js.jirengu.com/xifofatano/1/edit?html,css,output">http://js.jirengu.com/xifofatano/1/edit?html,css,output</a></li>
+</ul>
 
 <h3 id="transform">transform</h3>
 
-<ol>
-<li>四个常用功能</li>
+<h4 id="四个常用功能">四个常用功能</h4>
+
+<ul>
 <li>位移 translate</li>
 <li>缩放 scale</li>
 <li>旋转 rotate</li>
+<li>倾斜 skew</li>
+</ul>
 
-<li><p>倾斜 skew</p></li>
-
-<li><p>经验</p></li>
-</ol>
+<h4 id="经验">经验</h4>
 
 <ul>
 <li>一般需要配合transition过渡</li>
